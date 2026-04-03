@@ -23,11 +23,11 @@ Project Structure
 - video/
 - 
 Status
+
 Frontend structure completed. Ready for feedback and further improvements.
 
 Author
+
 Chinweolu Innocent Ugwunna(CentTech)
 
-Author
 
-Chinweolu Innocent Ugwunna
