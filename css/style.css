@@ -210,9 +210,14 @@ section {
   gap: 20px;
 }
 
-.about img {
+.carousel img {
+  display: none;
   width: 100%;
   border-radius: 10px;
+}
+
+.carousel .active {
+  display: block;
 }
 /* PROMISE SECTION */
 .why-choose {
@@ -474,42 +479,53 @@ section {
 }
 /*TESTIMONIAL*/
 .testimonials {
-  text-align: center;
   padding: 60px 20px;
+  background: #f8f9fb;
+  text-align: center;
 }
 
-.section-subtext {
-  color: #666;
-  margin-bottom: 40px;
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
 }
 
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+.testimonial-wrapper {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.6s ease;
 }
 
 .testimonial-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  text-align: left;
-  transition: 0.3s;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .testimonial-card p {
-  font-size: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 15px;
 }
 
 .testimonial-card h4 {
-  color: #ff7a00;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Desktop: show 2 cards */
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 50%;
+  }
 }
 /*PROOF*/
 .proof {
@@ -678,6 +694,9 @@ section {
   }
   .pre-footer-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .testimonial-card {
+    min-width: 10%;
   }
 }
 
