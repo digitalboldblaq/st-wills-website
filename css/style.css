@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
+  max-width: 100%;
 }
 
 html {
@@ -15,6 +16,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   line-height: 1.6;
   background: #f4f4f4;
   color: #222;
