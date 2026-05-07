@@ -253,6 +253,8 @@ section {
 }
 
 .glass-card {
+  width: 90%;
+  max-width: 350px;
   padding: 25px;
   border-radius: 10px;
   transition: 0.3s;
@@ -273,7 +275,9 @@ section {
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   background:
     radial-gradient(
       circle at top left,
@@ -906,14 +910,6 @@ section {
 
   .cards {
     grid-template-columns: repeat(3, 1fr);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .glass-card {
-    width: 90%;
-    max-width: 350px;
   }
   .contact-grid {
     flex-direction: row;
