@@ -253,6 +253,10 @@ section {
 }
 
 .glass-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   width: 90%;
   max-width: 350px;
   padding: 25px;
@@ -275,9 +279,6 @@ section {
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
   background:
     radial-gradient(
       circle at top left,
