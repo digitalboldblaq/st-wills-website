@@ -474,7 +474,7 @@ section {
 
   background: #081120;
 }
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .instructor-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -495,7 +495,7 @@ section {
 
     border-radius: 18px;
   }
-}
+} */
 .instructor-content {
   width: 100%;
 }
@@ -1449,5 +1449,39 @@ section {
 @media (min-width: 1024px) {
   .glass-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* =========================================================
+   ACADEMIC PROFILE - MOBILE FIX
+========================================================= */
+
+@media (max-width: 699px) {
+  .instructor-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .profile-media {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .profile-media video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .instructor-content {
+    width: 100%;
+  }
+
+  .instructor-content p {
+    line-height: 1.8;
+  }
+
+  .instructor-highlights {
+    grid-template-columns: 1fr;
   }
 }
