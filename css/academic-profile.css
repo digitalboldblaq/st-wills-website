@@ -1,0 +1,283 @@
+/* =========================================================
+   ST WILLS ACADEMY
+   ACADEMIC PROFILE HERO
+========================================================= */
+
+.profile-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 120px 20px 110px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(11, 110, 253, 0.25),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(255, 102, 0, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #001f4d 0%, #081120 60%, #061a36 100%);
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.profile-hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 31, 77, 0.95),
+    rgba(8, 17, 32, 0.82)
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   DECORATIVE GLOW
+========================================================= */
+
+.profile-hero-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(2px);
+
+  pointer-events: none;
+}
+
+.profile-glow-one {
+  width: 300px;
+  height: 300px;
+
+  top: -150px;
+  right: -80px;
+
+  background: rgba(11, 110, 253, 0.12);
+}
+
+.profile-glow-two {
+  width: 260px;
+  height: 260px;
+
+  bottom: -140px;
+  left: -80px;
+
+  background: rgba(255, 102, 0, 0.08);
+}
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.profile-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HERO TAG
+========================================================= */
+
+.profile-hero-tag {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 8px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
+
+  font-size: 0.82rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+
+  text-transform: uppercase;
+
+  backdrop-filter: blur(10px);
+}
+
+.profile-hero-tag i {
+  color: #ff6600;
+}
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.profile-hero h1 {
+  margin: 25px 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(2.7rem, 6vw, 5rem);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.profile-hero h1 span {
+  display: block;
+
+  color: #4da3ff;
+}
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.profile-hero p {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.profile-hero-actions {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 35px;
+
+  flex-wrap: wrap;
+}
+
+.profile-btn-primary,
+.profile-btn-secondary {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 14px 24px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.profile-btn-primary {
+  background: #0b6efd;
+
+  color: #ffffff !important;
+
+  box-shadow: 0 10px 28px rgba(11, 110, 253, 0.25);
+}
+
+.profile-btn-primary:hover {
+  background: #075ac8;
+
+  color: #ffffff !important;
+
+  transform: translateY(-3px);
+}
+
+.profile-btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: #ffffff !important;
+
+  backdrop-filter: blur(8px);
+}
+
+.profile-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+
+  color: #ffffff !important;
+
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .profile-hero {
+    padding: 90px 20px 85px;
+  }
+
+  .profile-hero h1 {
+    font-size: 2.5rem;
+
+    letter-spacing: -1.2px;
+  }
+
+  .profile-hero p {
+    font-size: 0.96rem;
+
+    line-height: 1.7;
+  }
+
+  .profile-hero-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .profile-btn-primary,
+  .profile-btn-secondary {
+    width: 100%;
+
+    max-width: 280px;
+  }
+}
