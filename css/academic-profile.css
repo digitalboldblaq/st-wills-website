@@ -281,3 +281,336 @@
     max-width: 280px;
   }
 }
+/* =========================================================
+   ACADEMIC PROFILE
+   PREMIUM INSTRUCTOR CONTENT
+========================================================= */
+
+.instructor-content {
+  position: relative;
+}
+
+/* Small academic label */
+.instructor-content > span:first-child {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #ff6600;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+/* Main heading */
+.instructor-content h2 {
+  margin: 0 0 22px;
+
+  color: #081120;
+
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+
+  font-weight: 800;
+}
+
+/* Main introduction */
+.instructor-content .instructor-intro {
+  max-width: 680px;
+
+  margin: 0 0 22px;
+
+  color: #172033;
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+/* Secondary description */
+.instructor-content .instructor-description {
+  max-width: 700px;
+
+  margin: 0 0 30px;
+
+  color: #667085;
+
+  font-size: 0.96rem;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   HIGHLIGHT CARDS
+========================================================= */
+
+.instructor-highlights {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 25px;
+}
+
+.highlight-card {
+  position: relative;
+
+  padding: 23px;
+
+  border: 1px solid #e8edf4;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(0, 31, 77, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.highlight-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 4px;
+  height: 100%;
+
+  border-radius: 16px 0 0 16px;
+
+  background: #0b6efd;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d9e7f8;
+
+  box-shadow: 0 16px 38px rgba(0, 31, 77, 0.1);
+}
+
+.highlight-card h3 {
+  margin: 0 0 10px;
+
+  color: #081120;
+
+  font-size: 1rem;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+}
+
+.highlight-card p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 0.88rem;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   ACADEMIC DETAILS
+========================================================= */
+
+.instructor-details {
+  margin-top: 28px;
+
+  padding: 22px 24px;
+
+  border-left: 3px solid #ff6600;
+
+  border-radius: 0 14px 14px 0;
+
+  background: #f6f8fb;
+}
+
+.instructor-details p {
+  margin: 0 0 8px;
+
+  color: #667085;
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+}
+
+.instructor-details p:last-child {
+  margin-bottom: 0;
+}
+
+.instructor-details strong {
+  color: #081120;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.instructor-cta {
+  margin-top: 30px;
+
+  padding-top: 28px;
+
+  border-top: 1px solid #e8edf4;
+}
+
+.instructor-cta h3 {
+  margin: 0 0 8px;
+
+  color: #081120;
+
+  font-size: 1.25rem;
+
+  font-weight: 800;
+}
+
+.instructor-cta p {
+  max-width: 650px;
+
+  margin: 0 0 20px;
+
+  color: #667085;
+
+  font-size: 0.92rem;
+
+  line-height: 1.7;
+}
+
+/* Premium CV button */
+.instructor-cta .profile-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  background: #081120;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  box-shadow: 0 10px 25px rgba(8, 17, 32, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.instructor-cta .profile-btn:hover {
+  transform: translateY(-3px);
+
+  background: #0b6efd;
+
+  color: #ffffff;
+
+  box-shadow: 0 14px 30px rgba(11, 110, 253, 0.2);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .instructor-highlights {
+    gap: 14px;
+  }
+
+  .highlight-card {
+    padding: 20px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 699px) {
+  .instructor-content > span:first-child {
+    margin-bottom: 10px;
+
+    font-size: 0.74rem;
+
+    letter-spacing: 1.2px;
+  }
+
+  .instructor-content h2 {
+    margin-bottom: 18px;
+
+    font-size: 2.25rem;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+  }
+
+  .instructor-content .instructor-intro {
+    font-size: 0.96rem;
+
+    line-height: 1.75;
+  }
+
+  .instructor-content .instructor-description {
+    font-size: 0.9rem;
+
+    line-height: 1.75;
+  }
+
+  .instructor-highlights {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin-top: 22px;
+  }
+
+  .highlight-card {
+    padding: 20px;
+  }
+
+  .instructor-details {
+    margin-top: 22px;
+
+    padding: 18px 20px;
+  }
+
+  .instructor-cta {
+    margin-top: 25px;
+
+    padding-top: 24px;
+  }
+
+  .instructor-cta .profile-btn {
+    width: 100%;
+  }
+}
